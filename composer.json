@@ -1,0 +1,17 @@
+{
+  "name": "lgdz/jwt",
+  "version": "1.0",
+  "description": "无状态身份验证",
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.0",
+    "lgdz/rsa": "^1.0.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "lgdz\\": "src"
+    }
+  }
+}
