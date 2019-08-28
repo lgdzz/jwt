@@ -7,7 +7,9 @@
   "minimum-stability": "stable",
   "require": {
     "php": ">=7.0",
-    "lgdz/rsa": "^1.0.2"
+    "ext-openssl": "*",
+    "ext-json": "*",
+    "lgdz/rsa": "^1.0.3"
   },
   "autoload": {
     "psr-4": {
