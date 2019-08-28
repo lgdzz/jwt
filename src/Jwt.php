@@ -7,8 +7,14 @@ use \Exception;
 class Jwt extends Rsa
 {
 
-    private $signatureAlg = 'SHA256';
+    private $signatureAlg = OPENSSL_ALGO_SHA256;
 
+    /**
+     * Jwt constructor.
+     * @param string $privateKey
+     * @param string $publicKey
+     * @throws Exception
+     */
     public function __construct(string $privateKey, string $publicKey)
     {
         if ($publicKey = openssl_get_publickey($publicKey)) {
@@ -76,6 +82,12 @@ class Jwt extends Rsa
         return $payload;
     }
 
+    /**
+     * @param string $data
+     * @param $privateKey
+     * @return string
+     * @throws Exception
+     */
     private function sign(string $data, $privateKey): string
     {
         $signature = '';

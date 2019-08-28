@@ -1,6 +1,6 @@
 {
   "name": "lgdz/jwt",
-  "version": "1.0",
+  "version": "1.1",
   "description": "无状态身份验证",
   "type": "library",
   "license": "MIT",

@@ -1,5 +1,10 @@
-# jwt
+### Install
 
+```
+composer require lgdz/jwt
+```
+
+### Demo
 ```php
 try {
 
